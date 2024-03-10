@@ -1,0 +1,118 @@
+/* Reset some default margin and padding */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and image to the body */
+body {
+    background-color:#DDEDF4;
+    font-family: 'Arial', sans-serif;
+    
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #61082B;
+    color: #B4D0E7;
+    
+    background-size: cover; /* Ensure the background image covers the entire header */
+    background-position: center; /* Center the background image */
+    position: relative; /* Position relative for z-index */
+}
+
+h1 {
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1; /* Set z-index to position text above the background image */
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    background-color: #928080;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: underline;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Section Styles */
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section#about {
+    margin-left: 100px;
+}
+
+#about h2 {
+    color: #2980b9;
+    max-width: 800px;
+}
+
+#contact h2 {
+    color: #2980b9;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #B4D0E7;
+    color: #333c3f;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Resume Section Styles */
+#resume {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#resume h2 {
+    color: #2980b9;
+}
+
+#resume a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#resume a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    section {
+        padding: 20px 10px;
+        max-width: 100%;
+    }
+}
